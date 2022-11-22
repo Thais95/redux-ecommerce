@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 `
 
 export const HomeHeader = styled.header`
@@ -12,6 +14,7 @@ export const HomeHeader = styled.header`
     z-index: 5;
     color: black;
     margin-top: -500px;
+    margin-bottom: 150px;
     header {
         width: 550px;
         display: flex;
@@ -38,4 +41,11 @@ export const HomeHeader = styled.header`
     img {
         width: 500px;
     }
+`
+
+export const ContainerFlex = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
 `

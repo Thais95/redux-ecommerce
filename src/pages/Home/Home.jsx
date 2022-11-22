@@ -1,6 +1,6 @@
 import React from 'react';
 import { Banner } from '../../components/Banner/Banner';
-import { HomeContainer, HomeHeader } from './Home.styled';
+import { ContainerFlex, HomeContainer, HomeHeader } from './Home.styled';
 import logo from '../../assets/logo.png';
 import { HomeCard } from '../../components/HomeCard/HomeCard';
 
@@ -15,7 +15,13 @@ export const Home = () => {
         </header>
         <img src={logo} alt="Logo de League of Legends" />
       </HomeHeader>
-      <HomeCard />
+      <ContainerFlex>
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+      </ContainerFlex>
     </HomeContainer>
   )
 }
