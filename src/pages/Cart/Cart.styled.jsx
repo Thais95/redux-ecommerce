@@ -22,7 +22,7 @@ export const ContainerCart = styled.section`
             display: flex;
             justify-content: center;
             border: none;
-            background-color: var(--secondary-color);
+            background-color: #4c4574;
             color: white;
             font-size: 1.5rem;
             padding: 15px 20px;
@@ -31,5 +31,18 @@ export const ContainerCart = styled.section`
             width: 220px;
             white-space: nowrap;
         }
+    }
+`
+
+export const CartHeader = styled.header`
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin: -350px 0px 350px 0px;
+    color: white;
+    gap: 20px;
+    flex-direction: column;
+    h1{
+        font-size: 3.5rem;
     }
 `
