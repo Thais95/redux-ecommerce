@@ -19,6 +19,11 @@ export const ContainerCategoryTitle = styled.div`
     margin-bottom: 20px;
   }
 
+  h1,
+  h2 {
+    color: #fff;
+  }
+
   img {
     border-radius: 30px;
     width: 250px;
