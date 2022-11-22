@@ -5,6 +5,11 @@ export const HomeCardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 150px;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.05);
+        transition: 1s;
+    }
 `
 
 export const CardContainer = styled.div`

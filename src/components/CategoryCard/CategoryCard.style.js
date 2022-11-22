@@ -7,6 +7,7 @@ export const ContainerCard = styled.div`
   border-radius: 5px;
   position: relative;
   margin-left: 5px;
+  margin-top: 100px;
 
   .ContainerImagem {
     width: 300px;

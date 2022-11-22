@@ -1,8 +1,11 @@
 import React from 'react'
+import { Banner } from '../../components/Banner/Banner'
 import { CartCard } from '../../components/CartCard/CartCard'
 import { ContainerCart } from './Cart.styled'
 export const Cart = () => {
   return (
+    <>
+    <Banner />
     <ContainerCart>
 
       <CartCard value={100}/>
@@ -19,5 +22,6 @@ export const Cart = () => {
           </div>
 
     </ContainerCart>
+    </>
   )
 }

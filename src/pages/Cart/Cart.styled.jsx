@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerCart = styled.section`
      width: 1700px;
      margin: 0 auto;
+     margin-bottom: 200px;
 .end{
         display: flex;
         justify-content: flex-end;

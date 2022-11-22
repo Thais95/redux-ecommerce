@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
 export const ContainerFooter = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 220px;
-  background-color: var(--secondary-color);
-  position: absolute;
-  bottom: 0;
+  background-color: black;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
   div {
     width: 1400px;
