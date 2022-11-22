@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { BannerContainer } from './Banner.styled';
 
 export const Banner = () => {
   return (
-    <div>Banner</div>
+    <BannerContainer />
   )
 }

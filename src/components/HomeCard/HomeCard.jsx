@@ -2,6 +2,8 @@ import React from 'react'
 
 export const HomeCard = () => {
   return (
-    <div>HomeCard</div>
+    <HomeCard>
+      <h1>Título</h1>
+    </HomeCard>
   )
 }
