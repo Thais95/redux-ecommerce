@@ -3,8 +3,7 @@ import { Header } from './Navbar.styled';
 import logo from '../../assets/logo.svg';
 import {FaShoppingCart, FaSearch} from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
-
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { mudarBusca, resetarBusca } from '../../store/reducers/busca';
 
 
@@ -25,7 +24,7 @@ export const Navbar = () => {
   return (
     <Header>
       <div className='logoContainer'>
-        <Link to={'/'}><img className='logo' src={logo} alt="" /></Link>
+        <Link to={'/'}><img className='logo' src={logo} alt="Logo" /></Link>
         <Link to={'/'} className='home'>Home</Link>
       </div>
       <div className='pesquisaContainer'>
