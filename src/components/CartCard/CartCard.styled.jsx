@@ -9,7 +9,7 @@ export const SectionCart = styled.section`
     padding-right: 50px;
     margin: 0 auto;
     border-radius: 10px;
-    width: 1200px;
+    width: 200px;
     height: 250px;
     img {
       width: 900px;

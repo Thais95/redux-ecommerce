@@ -6,6 +6,7 @@ export const HomeContainer = styled.div`
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+  justify-content: end;
   background-image: url(${homeBg});
   background-size: cover;
 `
@@ -15,7 +16,6 @@ export const HomeHeader = styled.header`
   align-items: center;
   justify-content: space-evenly;
   color: black;
-  margin-top: -500px;
   margin-bottom: 150px;
   header {
     width: 550px;
@@ -50,4 +50,6 @@ export const ContainerFlex = styled.div`
   justify-content: center;
   flex-direction: row;
   gap: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 `
