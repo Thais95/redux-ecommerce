@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import BgCart from '../../assets/shop.jpg'
+import BgCart from '../../assets/shop.webp'
 
 export const CartContainer = styled.div`
   background-image: url(${BgCart});
-  height: 100vh;
   background-size: cover;
   background-position: top;
+  background-repeat: no-repeat;
 ` 
 
 export const ContainerCart = styled.section`
@@ -15,7 +15,7 @@ export const ContainerCart = styled.section`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   align-items: center;
-  padding-bottom: 135px;
+  padding-bottom: 150px;
   .tituloCart{
     text-align: center;
     font-size: 2.25rem;
