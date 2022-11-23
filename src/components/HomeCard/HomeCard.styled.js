@@ -6,11 +6,10 @@ export const HomeCardContainer = styled.div`
   align-items: center;
   margin-bottom: 150px;
   margin-top: -50px;
-  transition: 1s;
-  z-index: 2;
+  transition: 0.5;
   &:hover {
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.5s;
   }
 `
 
@@ -19,23 +18,25 @@ export const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   width: 180px;
   height: 280px;
   border-radius: 12px;
+  cursor: pointer;
   img {
-    width: 200px;
-    height: 300px;
+    width: 170px;
+    height: 250px;
     border-radius: 12px;
     object-fit: cover;
     -webkit-user-drag: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 `
 
 export const CardTitle = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  text-align: center;
   cursor: pointer;
-  margin-top: 10px;
   color: white;
 `

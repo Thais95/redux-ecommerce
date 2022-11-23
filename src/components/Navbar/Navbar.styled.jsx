@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     width: 100vw;
+    height: 50px;
     background-color: black;
     color: white;
-    padding: 15px 100px;
+    padding: 0 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,12 +14,12 @@ export const Header = styled.header`
         align-items: center;
         gap: 100px;
         .logo{
-            width: 25px;
+            width: 30px;
             cursor: pointer;
         }
-        a{
+        .home {
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 500;
             color: white;
         }
@@ -31,29 +32,33 @@ export const Header = styled.header`
             color: white;
         }
         .Pesquisar{
-            position: relative;
-            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 285px;
             input{
-                width: 400px;
-                height: 40px;
-                padding: 8px;
+                width: 250px;
+                height: 30px;
+                padding: 0 15px;
                 border-radius: 5px;
                 border: none;
-                font-size: 1rem;
-                font-weight: 550;
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: #161616;
+                ::placeholder {
+                    color: #9b9b9b;
+                }
             }
             .iconeProcura{
-                position: absolute;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 font-weight: 700;
-                top: 6px;
-                right: 15px;
-                color: #000000;
+                color: #fff;
                 cursor: pointer;
+                padding-top: 5px;
             }
         }
         .compras{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             padding-top: 5px;
         }
 
