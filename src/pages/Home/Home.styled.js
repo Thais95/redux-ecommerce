@@ -5,7 +5,6 @@ export const HomeContainer = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: center;
   justify-content: end;
   background-image: url(${homeBg});
   background-size: cover;
@@ -39,9 +38,6 @@ export const HomeHeader = styled.header`
       text-align: center;
       text-shadow: 1px 2px 1px var(--detail-color);
     }
-  }
-  img {
-    width: 500px;
   }
 `
 

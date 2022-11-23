@@ -5,7 +5,6 @@ export const ContainerCategoryTitle = styled.div`
   margin: 0 auto;
   gap: 40px;
   width: 900px;
-  margin-top: -500px;
 
   justify-content: space-between;
   align-items: center;
