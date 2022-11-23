@@ -5,7 +5,9 @@ export const HomeCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 150px;
+  margin-top: -50px;
   transition: 1s;
+  z-index: 2;
   &:hover {
     transform: scale(1.05);
     transition: 1s;
