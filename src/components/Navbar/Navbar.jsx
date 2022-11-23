@@ -9,10 +9,8 @@ import { mudarBusca, resetarBusca } from '../../store/reducers/busca';
 
 
 export const Navbar = () => {
-
   const [valueInput, setValueInput] = useState('')
 
-  const buscar = useSelector(state=> state.busca)
   const dispatch = useDispatch()
   const location = useLocation()
 
@@ -20,10 +18,8 @@ export const Navbar = () => {
     dispatch(resetarBusca())
   },[location.pathname, dispatch])
 
-
-  function handleSubmit(e) {
-    e.preventDefault()
-    mudarBusca(valueInput)
+  function handleSubmit() {
+    dispatch(mudarBusca(valueInput))
   }
 
   return (
@@ -33,13 +29,10 @@ export const Navbar = () => {
         <Link to={'/'} className='home'>Home</Link>
       </div>
       <div className='pesquisaContainer'>
-        <form onSubmit={handleSubmit}>
-          <div className='Pesquisar'>
-            <input type="text"placeholder='O que você procura?...' onChange={e => setValueInput(e.target.value)}/>
-
-            <button className='iconeProcura'><FaSearch/></button>
-          </div>
-        </form>
+        <div className='Pesquisar'>
+          <input type="text" placeholder='O que você procura?...' onChange={e => setValueInput(e.target.value)} />
+          <i onClick={handleSubmit} className='iconeProcura'><FaSearch/></i>
+        </div>
         <Link to={'/carrinho'} className='compras'><FaShoppingCart/></Link>
       </div>
     </Header>
