@@ -2,20 +2,22 @@ import styled from 'styled-components'
 
 export const ContainerCategoryTitle = styled.div`
   display: flex;
-  margin: 0 auto;
-  gap: 40px;
-  width: 900px;
 
-  justify-content: space-between;
+  gap: 40px;
+  width: 650px;
+  color: #fff;
+  height: 400px;
+
   align-items: center;
 
   .ContainerTitle {
+    padding-left: 20%;
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 

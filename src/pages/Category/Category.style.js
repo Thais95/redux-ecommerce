@@ -8,5 +8,6 @@ export const ContainerCategoryCard = styled.div`
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 `
