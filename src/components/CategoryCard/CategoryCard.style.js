@@ -14,7 +14,8 @@ export const ContainerCard = styled.div`
     justify-content: center;
 
     color: #fff;
-    text-shadow: 0.1em 0.1em #000;
+    font-weight: 600;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.9);
   }
 
   .ContainerImagem {

@@ -6,7 +6,7 @@ export const CartContainer = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-` 
+`
 
 export const ContainerCart = styled.section`
   display: flex;
@@ -16,7 +16,7 @@ export const ContainerCart = styled.section`
   backdrop-filter: blur(5px);
   align-items: center;
   padding-bottom: 150px;
-  .tituloCart{
+  .tituloCart {
     text-align: center;
     font-size: 2.25rem;
     color: white;
@@ -31,19 +31,19 @@ export const ContainerCart = styled.section`
       padding: 15px 16px;
       align-items: center;
       justify-content: space-between;
-      background-color: #c4c3c3;
+      background-color: #fff;
       border-radius: 10px;
       width: 250px;
 
-      .precoRp{
+      .precoRp {
         color: #429983;
         font-size: 1.375rem;
         font-weight: 700;
       }
     }
 
-    .btnCart{
-      background-color: #11895A;
+    .btnCart {
+      background-color: #11895a;
       width: 250px;
       padding: 15px 0px;
       font-size: 1.5rem;
@@ -51,12 +51,16 @@ export const ContainerCart = styled.section`
       border: none;
       border-radius: 10px;
       color: white;
+      cursor: pointer;
+      :hover {
+        scale: 1.01;
+        transition: ease all 0.2s;
+      }
     }
-
   }
 `
 
 export const CartHeader = styled.header`
-  content: "";
+  content: '';
   height: 500px;
 `
