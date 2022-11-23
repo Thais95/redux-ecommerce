@@ -5,6 +5,12 @@ import ekkoThumb from '../../assets/ekkoThumb.png';
 import luxThumb from '../../assets/luxThumb.png';
 import viThumb from '../../assets/viThumb.png';
 import brandThumb from '../../assets/brandThumb.png';
+import ahriBackground from '../../assets/ahriBg.jpg'
+import leeSinBackground from '../../assets/leeSinBg.jpg'
+import ekkoBackground from '../../assets/ekkoBg.jpg'
+import luxBackground from '../../assets/luxBg.jpg'
+import viBackground from '../../assets/viBg.jpg'
+import brandBackground from '../../assets/brandBg.jpg'
 
 const initialState = [
     {

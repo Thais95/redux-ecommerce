@@ -11,18 +11,16 @@ export const ContainerCategoryTitle = styled.div`
   align-items: center;
 
   .ContainerTitle {
-    margin-top: -200px;
+    
+    h1{
+      font-size: 10rem;
+    }
+
+    h2{
+      font-size: 2rem;
+    }
   }
 
-  h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-
-  h1,
-  h2 {
-    color: #fff;
-  }
 
   img {
     border-radius: 30px;
