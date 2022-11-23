@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import ahriThumb from '../../assets/ahriThumb.png';
-import leeSinThumb from '../../assets/leeSinThumb.png';
-import ekkoThumb from '../../assets/ekkoThumb.png';
-import luxThumb from '../../assets/luxThumb.png';
-import viThumb from '../../assets/viThumb.png';
-import brandThumb from '../../assets/brandThumb.png';
+import ahriThumb from '../../assets/ahriThumb.webp';
+import leeSinThumb from '../../assets/leeSinThumb.webp';
+import ekkoThumb from '../../assets/ekkoThumb.webp';
+import luxThumb from '../../assets/luxThumb.webp';
+import viThumb from '../../assets/viThumb.webp';
+import brandThumb from '../../assets/brandThumb.webp';
 import ahriBackground from '../../assets/ahriBg.webp';
 import leeSinBackground from '../../assets/leeSinBg.webp';
 import ekkoBackground from '../../assets/ekkoBg.webp';
