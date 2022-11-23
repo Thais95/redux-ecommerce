@@ -3,6 +3,8 @@ import { Banner } from '../../components/Banner/Banner';
 import { ContainerFlex, HomeContainer, HomeHeader } from './Home.styled';
 import logo from '../../assets/logo.png';
 import { HomeCard } from '../../components/HomeCard/HomeCard';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 export const Home = () => {
   return (
