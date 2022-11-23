@@ -1,34 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import { SectionCart } from './CartCard.styled'
-import fotoBraum from '../../assets/skin-braum.jfif'
-import menos from '../../assets/menos.svg'
-import mais from '../../assets/mais.svg'
+// import React, { useState } from 'react'
+// import { SectionCart } from './CartCard.styled'
+// import fotoBraum from '../../assets/skin-braum.jfif'
+// import menos from '../../assets/menos.svg'
+// import mais from '../../assets/mais.svg'
 
-import {AiTwotoneHeart} from 'react-icons/ai'
+// import {AiTwotoneHeart} from 'react-icons/ai'
 
 export const CartCard = ({value}) => {
 
-  const [add, setAdd] = useState(0)
-  const [valor,setValor] = useState(0)
-  function adicionarMaisUm(){
-    setAdd(add + 1)
-    setValor(valor + parseInt(value)) 
-  }
+  // const [add, setAdd] = useState(0)
+  // const [valor,setValor] = useState(0)
+  // function adicionarMaisUm(){
+  //   setAdd(add + 1)
+  //   setValor(valor + parseInt(value)) 
+  // }
 
-  function subtrairMaisUm(){
-    if(add === 0){
-      setAdd(add)
-      setValor(valor)
-    } else{
-      setAdd(add-1)
-      setValor(valor - parseInt(value)) 
-    }
+  // function subtrairMaisUm(){
+  //   if(add === 0){
+  //     setAdd(add)
+  //     setValor(valor)
+  //   } else{
+  //     setAdd(add-1)
+  //     setValor(valor - parseInt(value)) 
+  //   }
 
-  }
+  // }
 
   return (
     <>
-      <SectionCart>
+      <h1>dsada</h1>
+      {/* <SectionCart>
           <div className='cardsCompras'>
             <img src={fotoBraum} alt="Foto braum"/>
             <div className='descricao'>
@@ -55,8 +56,8 @@ export const CartCard = ({value}) => {
           </div>
 
           
-      </SectionCart>
+      </SectionCart>*/}
+    </> 
     
-    </>
   )
 }

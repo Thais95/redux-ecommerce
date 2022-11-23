@@ -1,11 +1,11 @@
 import React from 'react';
 import { ContainerCard } from './CategoryCard.style';
-import LeeSin from '../../assets/lee-sin.jpg';
-import IconRP from '../../assets/icon-rp.png';
+// import LeeSin from '../../assets/lee-sin.jpg';
+// import IconRP from '../../assets/icon-rp.png';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaCartPlus } from 'react-icons/fa';
-import { mudarFavorito } from '../../store/reducers/items';
-import { useDispatch, useSelector } from 'react-redux';
+// import { mudarFavorito } from '../../store/reducers/items';
+// import { useDispatch, useSelector } from 'react-redux';
 // import { mudarCarrinho, mudarQuantidade } from '../../store/reducers/cart';
 
 // const iconeProps = { size: 24, color: black }
@@ -19,32 +19,28 @@ import { useDispatch, useSelector } from 'react-redux';
 
 // function resolverCarrinho() { dispatch(mudarCarrinho(id)) }
 
-export const CategoryCard = () => {
+export const CategoryCard = ({nomeSkin,fotoSkin,preco}) => {
   return (
     <ContainerCard>
       <div className="ContainerImagem">
         <div>
-          <img className="Imagem" src={LeeSin} />
+          <img className="Imagem" src={fotoSkin} alt='' />
         </div>
-        <h3>Lee sin</h3>
         <p>
-          A master of Ionia's ancient martial arts, Lee Sin is a principled
-          fighter who channels the essence of the dragon spirit to face any
-          challenge.
+         {nomeSkin}
         </p>
         <div className="ContainerLowerCard">
           <div className="CardPrice">
-            {' '}
+
             <i>
-              {' '}
-              <strong>RP: 875</strong>
-              <img src={IconRP} alt="" />
+
+              <strong>RP: {preco}</strong>
             </i>
           </div>
           <div className="Heart">
-            {' '}
+
             <i>
-              {' '}
+
               <AiOutlineHeart />
               <FaCartPlus />
             </i>

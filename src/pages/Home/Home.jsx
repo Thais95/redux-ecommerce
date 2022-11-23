@@ -3,10 +3,12 @@ import { Banner } from '../../components/Banner/Banner';
 import { ContainerFlex, HomeContainer, HomeHeader } from './Home.styled';
 import logo from '../../assets/logo.png';
 import { HomeCard } from '../../components/HomeCard/HomeCard';
+// import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 
 export const Home = () => {
+
+
   return (
     <HomeContainer>
       <Banner />
@@ -18,10 +20,6 @@ export const Home = () => {
         <img src={logo} alt="Logo de League of Legends" />
       </HomeHeader>
       <ContainerFlex>
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
         <HomeCard />
       </ContainerFlex>
     </HomeContainer>
