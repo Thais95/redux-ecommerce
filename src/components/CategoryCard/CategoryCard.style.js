@@ -35,8 +35,6 @@ export const ContainerCard = styled.div`
     height: 200px;
     object-fit: cover;
     object-position: 0px 0px;
-
-    border-radius: 5px 5px 0px 0px;
   }
 
   .CardPrice {
@@ -63,10 +61,10 @@ export const ContainerCard = styled.div`
     margin-top: -45px;
     width: 100%;
     background-color: #fff;
-    border-radius: 0px 0px 5px 0px;
+
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     padding-bottom: 5px;
 
     .ContainerLowerCard {
@@ -75,6 +73,10 @@ export const ContainerCard = styled.div`
       width: 100%;
       display: flex;
       justify-content: space-around;
+    }
+
+    .fotoCoracao {
+      color: red;
     }
 
     strong {

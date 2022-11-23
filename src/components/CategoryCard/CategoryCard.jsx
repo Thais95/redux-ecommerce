@@ -17,7 +17,7 @@ export const CategoryCard = ({ skin, onClick }) => {
               <i>
                 {skin.favorito ? (
                   <span onClick={onClick}>
-                    <FaHeart />
+                    <FaHeart className="fotoCoracao" />
                   </span>
                 ) : (
                   <span onClick={onClick}>
