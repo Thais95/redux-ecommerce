@@ -29,7 +29,7 @@ Somente digitar no terminal: npm start
 ## Mais sobre o projeto:
 
 #### Categorias:
-<img align="center" width="600px" src="https://i.imgur.com/xYChTfx.png" >
+<img align="center" width="600px" src="https://i.imgur.com/tLOaMJg.png" >
 
 #### Carrinho de compras:
 <img align="center" width="600px" src="https://i.imgur.com/hzE8Mn5.png" >
