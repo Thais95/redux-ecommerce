@@ -1,51 +1,43 @@
 import styled from 'styled-components'
 
 export const SectionCart = styled.section`
-  margin-top: 100px;
   .cardsCompras {
     display: flex;
     align-items: center;
-    background-color: #c4c3c3;
-    padding-right: 50px;
+    background-color: white;
+    padding: 10px 10px;
     margin: 0 auto;
     border-radius: 10px;
-    width: 200px;
-    height: 250px;
+    width: 1300px;
     img {
-      width: 900px;
+      width: 450px;
       border-radius: 10px 0px 0px 10px;
     }
 
     .descricao {
       display: flex;
       flex-direction: column;
-
       .texto {
         margin-left: 10px;
-        width: 100%;
       }
 
       .precoQuantidade {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        width: 800px;
+        padding-left: 10px;
         .preco {
-          background-color: #0939d6;
-          color: white;
-          width: 120px;
-          height: 70px;
-          padding: 10px;
-          margin-top: 10px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          font-size: 1.375rem;
+          font-weight: 500;
+          margin-top: -20px;
         }
 
         .quantidade {
           display: flex;
           align-items: center;
           gap: 20px;
+          margin-top: 50px;
 
           i {
             padding-top: 5px;

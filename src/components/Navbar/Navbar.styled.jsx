@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Header = styled.header`
     width: 100vw;
@@ -63,4 +63,5 @@ export const Header = styled.header`
         }
 
     }
+  }
 `

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import homeBg from '../../assets/banner.png';
+import styled from 'styled-components'
+import homeBg from '../../assets/banner.png'
 
 export const HomeContainer = styled.div`
   width: 100vw;

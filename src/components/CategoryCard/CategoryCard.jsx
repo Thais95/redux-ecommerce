@@ -1,28 +1,37 @@
-import React from 'react';
-import { ContainerCard } from './CategoryCard.style';
-import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa';
+import React from 'react'
+import { ContainerCard } from './CategoryCard.style'
+import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa'
 
-export const CategoryCard = ({skin, onClick}) => {
+export const CategoryCard = ({ skin, onClick }) => {
   return (
     <ContainerCard>
       <div className="ContainerImagem">
         <div>
-          <img className="Imagem" src={skin.foto} alt='' />
-        </div>
-        <p>
-         {skin.titulo}
-        </p>
-        <div className="ContainerLowerCard">
-          <div className="CardPrice">
-            <i>
-              <strong>RP: {skin.preco}</strong>
-            </i>
-          </div>
+          <img className="Imagem" src={skin.foto} alt="" />
+
           <div className="Heart">
-              {skin.favorito ? <span onClick={onClick}><FaHeart /></span> : <span onClick={onClick}><FaRegHeart /></span>}
-            <i>
-              <FaCartPlus />
-            </i>
+            <div>
+              <p>{skin.titulo}</p>
+            </div>
+            <div className="ContainerLowerCard">
+              <i>
+                {skin.favorito ? (
+                  <span onClick={onClick}>
+                    <FaHeart className="fotoCoracao" />
+                  </span>
+                ) : (
+                  <span onClick={onClick}>
+                    <FaRegHeart />
+                  </span>
+                )}
+              </i>
+              <div>
+                <strong>RP: {skin.preco}</strong>
+              </div>
+              <i>
+                <FaCartPlus />
+              </i>
+            </div>
           </div>
         </div>
       </div>

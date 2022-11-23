@@ -1,49 +1,66 @@
 import styled from 'styled-components'
+import BgCart from '../../assets/shop.webp'
+
+export const CartContainer = styled.div`
+  background-image: url(${BgCart});
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+`
 
 export const ContainerCart = styled.section`
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  padding-bottom: 150px;
+  .tituloCart {
+    text-align: center;
+    font-size: 2.25rem;
+    color: white;
+    margin-top: 20px;
+  }
   .end {
     display: flex;
-    justify-content: flex-end;
-    margin: 20px 190px 0px 0px;
+    align-items: center;
+    gap: 20px;
     .valorTotal {
       display: flex;
-      padding: 15px 20px;
+      padding: 15px 16px;
       align-items: center;
       justify-content: space-between;
-      background-color: #c4c3c3;
+      background-color: #fff;
       border-radius: 10px;
-      width: 600px;
+      width: 250px;
+
+      .precoRp {
+        color: #429983;
+        font-size: 1.375rem;
+        font-weight: 700;
+      }
     }
 
-    button {
-      display: flex;
-      justify-content: center;
-      border: none;
-      background-color: #4c4574;
-      color: white;
+    .btnCart {
+      background-color: #11895a;
+      width: 250px;
+      padding: 15px 0px;
       font-size: 1.5rem;
-      padding: 15px 20px;
-      border-radius: 30px;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      color: white;
       cursor: pointer;
-      width: 220px;
-      white-space: nowrap;
-      align-items: center;
+      :hover {
+        scale: 1.01;
+        transition: ease all 0.2s;
+      }
     }
   }
 `
 
 export const CartHeader = styled.header`
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  margin: -350px 0px 350px 0px;
-  color: white;
-  gap: 20px;
-  flex-direction: column;
-  h1 {
-    font-size: 3.5rem;
-  }
+  content: '';
+  height: 500px;
 `
