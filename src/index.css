@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
 :root {
   --primary-color: #00208a;
   --secondary-color: #1a1825;
@@ -13,7 +15,7 @@
   list-style: none;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Signika', sans-serif;
   overflow-x: hidden;
 }
 

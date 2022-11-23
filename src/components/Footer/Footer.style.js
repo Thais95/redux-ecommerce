@@ -8,18 +8,6 @@ export const ContainerFooter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-  div {
-    width: 1400px;
-    display: flex;
-    justify-content: left;
-
-    p {
-      color: #fff;
-    }
-  }
-
   .Container {
     display: flex;
     justify-content: center;
@@ -28,12 +16,10 @@ export const ContainerFooter = styled.div`
     text-align: center;
     color: #fff;
     align-items: center;
-
     h2 {
       padding-bottom: 20px;
     }
   }
-
   .ContainerIcon {
     font-size: 30px;
     padding: 10px;
@@ -41,7 +27,6 @@ export const ContainerFooter = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 10px;
-
     i {
       :hover {
         color: var(--detail-color);

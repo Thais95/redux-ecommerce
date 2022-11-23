@@ -1,24 +1,8 @@
 import React from 'react';
 import { ContainerCard } from './CategoryCard.style';
-import { AiOutlineHeart } from 'react-icons/ai';
-import { FaCartPlus } from 'react-icons/fa';
-import { mudarFavorito } from '../../store/reducers/items';
-import { useDispatch } from 'react-redux';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { mudarCarrinho, mudarQuantidade } from '../../store/reducers/cart';
+import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa';
 
-// const iconeProps = { size: 24, color: black }
-
-// function item(props) { const {titulo, foto, preco, favorito, id, quantidade} = props }
-
-const dispatch = useDispatch
-// const isInCart = useSelector(state => state.cart.some(itemInCart => itemInCart.id === id))
-
-// function resolverFavorito() { dispatch(mudarFavorito(id)) }
-
-// function resolverCarrinho() { dispatch(mudarCarrinho(id)) }
-
-export const CategoryCard = ({skin}) => {
+export const CategoryCard = ({skin, onClick}) => {
   return (
     <ContainerCard>
       <div className="ContainerImagem">
@@ -30,16 +14,13 @@ export const CategoryCard = ({skin}) => {
         </p>
         <div className="ContainerLowerCard">
           <div className="CardPrice">
-
             <i>
-
               <strong>RP: {skin.preco}</strong>
             </i>
           </div>
           <div className="Heart">
-
+              {skin.favorito ? <span onClick={onClick}><FaHeart /></span> : <span onClick={onClick}><FaRegHeart /></span>}
             <i>
-              <AiOutlineHeart/>
               <FaCartPlus />
             </i>
           </div>

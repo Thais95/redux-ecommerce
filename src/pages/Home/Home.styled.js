@@ -1,16 +1,19 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import homeBg from '../../assets/banner.png';
 
 export const HomeContainer = styled.div`
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
+  background-image: url(${homeBg});
+  background-size: cover;
 `
 
 export const HomeHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 5;
   color: black;
   margin-top: -500px;
   margin-bottom: 150px;
