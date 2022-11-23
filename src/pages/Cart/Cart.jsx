@@ -1,26 +1,25 @@
 import React from 'react';
 import { CartCard } from '../../components/CartCard/CartCard';
-import { CartHeader, ContainerCart } from './Cart.styled';
+import { CartContainer, CartHeader, ContainerCart } from './Cart.styled';
 
 export const Cart = () => {
   return (
-    <>
+    <CartContainer>
       <CartHeader>
-        <h1>Carrinho de compras</h1>
-        <h2>Confira as skills que você adicionou ao carrinho.</h2>
       </CartHeader>
       <ContainerCart>
+        <h1 className='tituloCart'>Resumo do Carrinho</h1>
         <CartCard value={100} />
         <div className='end'>
           <div className='valorTotal'>
-            <h3>Resumo da compra</h3>
-            <p>Subtotal <span>R$ 100</span></p>
+            <h1>Subtotal:</h1>
+            <h2 className='precoRp'>2390 RP</h2>
+          </div>
+          <div>
+           <button className='btnCart'>Finalizar Compra</button>
           </div>
         </div>
-        <div className='end'>
-          <button>Finalizar Compra</button>
-        </div>
       </ContainerCart>
-    </>
+    </CartContainer>
   )
 }
