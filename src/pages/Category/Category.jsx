@@ -10,24 +10,26 @@ import { useDispatch } from 'react-redux';
 export const Category = () => {
   const { userName } = useParams();
   const categoria = useSelector(state => state.categorias);
-  const skins = useSelector(state => state.itens);
   const dispatch = useDispatch();
-
+  const {itens} = useSelector(states =>{
+    const regexp = new RegExp(states.busca, 'i')
+    return{
+      itens: states.itens.filter( item => item.categoria === userName && item.titulo.match(regexp)),
+    }
+  }) 
+  
   const item = categoria.filter((i) => {
     return i.id === userName
-  })
-
-  const skin = skins.filter((skin) => {
-    return skin.categoria === userName
   })
 
   return (
     <>    
       {item.map((item) => {
         return <CategoryContainer key={item.id} style={{backgroundImage: `url(${item.background})`}}> <CategoryTitle tituloDescricao={item} />
+
       <ContainerCategoryCard>
-        {skin.map((skin) => {
-          return <CategoryCard key={skin.id} onClick={() => dispatch(mudarFavorito(skin.id))} skin={skin} />
+        {itens.map((skin) => {
+          return <CategoryCard key={skin.id} {...skin} onClick={() => dispatch(mudarFavorito(skin.id))} skin={skin} />
         })}
       </ContainerCategoryCard>
     </CategoryContainer>
