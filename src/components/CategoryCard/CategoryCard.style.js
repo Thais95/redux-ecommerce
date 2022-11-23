@@ -67,7 +67,8 @@ export const ContainerCard = styled.div`
     background-color: rgb(0,0,0, 0.5);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding-bottom: 10px;
     .ContainerLowerCard {
       height: 20px;
