@@ -1,10 +1,9 @@
 import React from 'react';
 import { ContainerCard } from './CategoryCard.style';
-// import LeeSin from '../../assets/lee-sin.jpg';
-// import IconRP from '../../assets/icon-rp.png';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaCartPlus } from 'react-icons/fa';
-// import { mudarFavorito } from '../../store/reducers/items';
+import { mudarFavorito } from '../../store/reducers/items';
+import { useDispatch } from 'react-redux';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { mudarCarrinho, mudarQuantidade } from '../../store/reducers/cart';
 
@@ -12,36 +11,35 @@ import { FaCartPlus } from 'react-icons/fa';
 
 // function item(props) { const {titulo, foto, preco, favorito, id, quantidade} = props }
 
-// const dispatch = useDispatch
+const dispatch = useDispatch
 // const isInCart = useSelector(state => state.cart.some(itemInCart => itemInCart.id === id))
 
 // function resolverFavorito() { dispatch(mudarFavorito(id)) }
 
 // function resolverCarrinho() { dispatch(mudarCarrinho(id)) }
 
-export const CategoryCard = ({nomeSkin,fotoSkin,preco}) => {
+export const CategoryCard = ({skin}) => {
   return (
     <ContainerCard>
       <div className="ContainerImagem">
         <div>
-          <img className="Imagem" src={fotoSkin} alt='' />
+          <img className="Imagem" src={skin.foto} alt='' />
         </div>
         <p>
-         {nomeSkin}
+         {skin.titulo}
         </p>
         <div className="ContainerLowerCard">
           <div className="CardPrice">
 
             <i>
 
-              <strong>RP: {preco}</strong>
+              <strong>RP: {skin.preco}</strong>
             </i>
           </div>
           <div className="Heart">
 
             <i>
-
-              <AiOutlineHeart />
+              <AiOutlineHeart/>
               <FaCartPlus />
             </i>
           </div>
