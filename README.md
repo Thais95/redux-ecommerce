@@ -1,9 +1,11 @@
 # E-commerce League of Legends
 
 
-<img align="center" width="600px" src="https://i.imgur.com/XoSpApA.png" >
+<img align="center" width="600px" src="https://i.imgur.com/rG4012J.png" >
 
-#### O projeto consiste em um e-commerce em andamento onde será possível simular uma compra de skins.
+#### O projeto consiste em um e-commerce onde será possível favoritar uma skin, adicionar ao carrinho as compras e simular uma compra.
+
+
 
 <hr>
 
@@ -26,9 +28,17 @@ Somente digitar no terminal: npm start
 
 ## Mais sobre o projeto:
 
-#### Carrinho de compras:
-<img align="center" width="600px" src="https://i.imgur.com/8ux1CSb.png" >
+#### Categorias:
+<img align="center" width="600px" src="https://i.imgur.com/xYChTfx.png" >
 
+#### Carrinho de compras:
+<img align="center" width="600px" src="https://i.imgur.com/hzE8Mn5.png" >
+
+
+
+#### Figma: <br>
+
+https://www.figma.com/file/4VBmlM7jYPIT3Y4Z65M0y9/LoL-Redux?node-id=0%3A1
 
 
  ### Desenvolvedores: 
@@ -41,6 +51,7 @@ Somente digitar no terminal: npm start
 
 [<img src="https://avatars.githubusercontent.com/u/102439841?v=4" width=115 > <br> <sub> Gustavo Scopinho </sub>](https://github.com/GustavoScopinho)  |   
 | :---: | 
+
 
 
 
