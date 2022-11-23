@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-    width: 100vw;
-    height: 50px;
+    height: 60px;
     background-color: black;
     color: white;
     padding: 0 200px;
@@ -12,9 +11,9 @@ export const Header = styled.header`
     .logoContainer{
         display: flex;
         align-items: center;
-        gap: 100px;
+        gap: 80px;
         .logo{
-            width: 30px;
+            width: 90px;
             cursor: pointer;
         }
         .home {
@@ -63,5 +62,4 @@ export const Header = styled.header`
         }
 
     }
-  }
 `

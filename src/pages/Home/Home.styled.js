@@ -1,18 +1,22 @@
-import styled from 'styled-components'
-import homeBg from '../../assets/banner.png'
+import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
-  width: 100vw;
-`
-
-export const BackgroundContainer = styled.div`
-  background-image: url(${homeBg});
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    top: 0;
+    opacity: 0.2;
+  }
 `
 
 export const HomeHeader = styled.header`
@@ -24,9 +28,11 @@ export const HomeHeader = styled.header`
   justify-content: center;
   color: black;
   margin-left: 200px;
+  padding-bottom: 50px;
+  z-index: 2;
     h1 {
       color: white;
-      font-size: 3.8rem;
+      font-size: 3.5rem;
       font-weight: 700;
       user-select: none;
       text-align: center;
@@ -34,7 +40,7 @@ export const HomeHeader = styled.header`
     }
     h2 {
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 400;
       user-select: none;
       text-align: center;
@@ -50,4 +56,5 @@ export const ContainerFlex = styled.div`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   overflow-x: visible;
+  z-index: 2;
 `

@@ -15,10 +15,10 @@ export const HomeCard = () => {
             <CardContainer>
               <img src={el.thumbnail} alt={el.nome} />
             </CardContainer>
-            <CardTitle>
-              {el.nome}
-            </CardTitle>
           </Link>
+          <CardTitle>
+            {el.nome}
+          </CardTitle>
         </HomeCardContainer>
       ))}
     

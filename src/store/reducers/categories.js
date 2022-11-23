@@ -5,12 +5,12 @@ import ekkoThumb from '../../assets/ekkoThumb.png';
 import luxThumb from '../../assets/luxThumb.png';
 import viThumb from '../../assets/viThumb.png';
 import brandThumb from '../../assets/brandThumb.png';
-import ahriBackground from '../../assets/ahriBg.jpg'
-import leeSinBackground from '../../assets/leeSinBg.jpg'
-import ekkoBackground from '../../assets/ekkoBg.jpg'
-import luxBackground from '../../assets/luxBg.jpg'
-import viBackground from '../../assets/viBg.jpg'
-import brandBackground from '../../assets/brandBg.jpg'
+import ahriBackground from '../../assets/ahriBg.webp';
+import leeSinBackground from '../../assets/leeSinBg.webp';
+import ekkoBackground from '../../assets/ekkoBg.webp';
+import luxBackground from '../../assets/luxBg.webp';
+import viBackground from '../../assets/viBg.webp';
+import brandBackground from '../../assets/brandBg.webp';
 
 const initialState = [
     {

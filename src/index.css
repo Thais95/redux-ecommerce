@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
 
-:root {
-  --primary-color: #00208a;
-  --secondary-color: #1a1825;
-  --background-color: #042028;
-  --detail-color: #dc6b0a;
-  --secondary-detail-color: #5a3a24;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -19,5 +11,5 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: rgb(23, 23, 23);
 }

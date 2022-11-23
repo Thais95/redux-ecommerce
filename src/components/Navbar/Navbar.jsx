@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './Navbar.styled';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import {FaShoppingCart, FaSearch} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 

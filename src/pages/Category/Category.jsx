@@ -24,14 +24,11 @@ export const Category = () => {
   return (
     <>    
       {item.map((item) => {
-        return <CategoryContainer style={{backgroundImage: `url(${item.background})`}}> <CategoryTitle tituloDescricao={item} />
-      
-
+        return <CategoryContainer key={item.id} style={{backgroundImage: `url(${item.background})`}}> <CategoryTitle tituloDescricao={item} />
       <ContainerCategoryCard>
         {skin.map((skin) => {
-          return <CategoryCard onClick={() => dispatch(mudarFavorito(skin.id))} skin={skin} />
+          return <CategoryCard key={skin.id} onClick={() => dispatch(mudarFavorito(skin.id))} skin={skin} />
         })}
-
       </ContainerCategoryCard>
     </CategoryContainer>
     })}

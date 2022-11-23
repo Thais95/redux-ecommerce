@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContainerFooter = styled.div`
-  width: 100vw;
   height: 220px;
   background-color: black;
   display: flex;
@@ -28,7 +27,7 @@ export const ContainerFooter = styled.div`
     margin-top: 10px;
     i {
       :hover {
-        color: var(--detail-color);
+        color: #d5336e;
         cursor: pointer;
       }
     }

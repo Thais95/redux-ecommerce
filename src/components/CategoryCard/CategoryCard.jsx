@@ -8,7 +8,6 @@ export const CategoryCard = ({ skin, onClick }) => {
       <div className="ContainerImagem">
         <div>
           <img className="Imagem" src={skin.foto} alt="" />
-
           <div className="Heart">
             <div>
               <p>{skin.titulo}</p>

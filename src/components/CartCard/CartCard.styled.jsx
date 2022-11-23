@@ -3,52 +3,49 @@ import styled from 'styled-components'
 export const SectionCart = styled.section`
   .cardsCompras {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     padding: 10px 10px;
     margin: 0 auto;
     border-radius: 10px;
-    width: 1300px;
-    img {
-      width: 450px;
-      border-radius: 10px 0px 0px 10px;
-    }
-
+    width: 800px;
+    height: 120px;
+    position: relative;
     .descricao {
       display: flex;
       flex-direction: column;
+      gap: 10px;
+      margin-left: 15px;
       .texto {
-        margin-left: 10px;
+        font-size: 1.2rem;
+        color: #012F2D;
       }
-
+      .preco {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #012F2D;
+      }
       .precoQuantidade {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 800px;
         padding-left: 10px;
-        .preco {
-          font-size: 1.375rem;
-          font-weight: 500;
-          margin-top: -20px;
-        }
-
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
         .quantidade {
           display: flex;
           align-items: center;
           gap: 20px;
           margin-top: 50px;
-
           i {
             padding-top: 5px;
             font-size: 1rem;
           }
-
           .mais {
             width: 30px;
             cursor: pointer;
           }
-
           .menos {
             width: 30px;
             cursor: pointer;

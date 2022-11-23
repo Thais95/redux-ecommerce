@@ -6,6 +6,7 @@ export const Cart = () => {
   return (
     <CartContainer>
       <CartHeader>
+        Veja sua mercadoria escolhida
       </CartHeader>
       <ContainerCart>
         <h1 className='tituloCart'>Resumo do Carrinho</h1>

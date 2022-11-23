@@ -6,9 +6,9 @@ export const HomeCardContainer = styled.div`
   align-items: center;
   margin-bottom: 150px;
   margin-top: -50px;
-  transition: 0.5;
+  transition: 1s;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: 0.5s;
   }
 `
@@ -34,9 +34,10 @@ export const CardContainer = styled.div`
 `
 
 export const CardTitle = styled.div`
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: -15px;
+  font-weight: 500;
   text-align: center;
-  cursor: pointer;
   color: white;
+  user-select: none;
 `
