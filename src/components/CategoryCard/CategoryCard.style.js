@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const ContainerCard = styled.div`
   width: 300px;
-  background-color: #fff;
+
   height: 420px;
   border-radius: 5px;
   position: relative;
   margin-left: 5px;
   margin-top: 100px;
+  background-color: red;
 
   .ContainerImagem {
     width: 300px;

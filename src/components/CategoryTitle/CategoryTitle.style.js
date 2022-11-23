@@ -5,22 +5,19 @@ export const ContainerCategoryTitle = styled.div`
   margin: 0 auto;
   gap: 40px;
   width: 900px;
-  margin-top: -500px;
 
   justify-content: space-between;
   align-items: center;
 
   .ContainerTitle {
-    
-    h1{
-      font-size: 10rem;
+    h1 {
+      font-size: 4rem;
     }
 
-    h2{
+    h2 {
       font-size: 2rem;
     }
   }
-
 
   img {
     border-radius: 30px;
