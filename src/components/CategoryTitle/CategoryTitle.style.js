@@ -13,12 +13,20 @@ export const ContainerCategoryTitle = styled.div`
     text-align: center;
     user-select: none;
     h1 {
-      font-size: 3rem;
-      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 700;
+      user-select: none;
+      text-align: center;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.90);
     }
     h2 {
-      font-size: 1.5rem;
-      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      user-select: none;
+      text-align: center;
+      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);
     }
   }
   img {

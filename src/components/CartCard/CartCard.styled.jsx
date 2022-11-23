@@ -11,6 +11,9 @@ export const SectionCart = styled.section`
     width: 800px;
     height: 120px;
     position: relative;
+    img {
+      -webkit-user-drag: none;
+    }
     .descricao {
       display: flex;
       flex-direction: column;
@@ -19,11 +22,13 @@ export const SectionCart = styled.section`
       .texto {
         font-size: 1.2rem;
         color: #012F2D;
+        user-select: none;
       }
       .preco {
           font-size: 1.3rem;
           font-weight: 600;
           color: #012F2D;
+          user-select: none;
       }
       .precoQuantidade {
         display: flex;
@@ -32,11 +37,11 @@ export const SectionCart = styled.section`
         padding-left: 10px;
         position: absolute;
         right: 10px;
-        bottom: 5px;
+        bottom: 10px;
         .quantidade {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 15px;
           margin-top: 50px;
           i {
             padding-top: 5px;
@@ -50,6 +55,9 @@ export const SectionCart = styled.section`
             width: 30px;
             cursor: pointer;
           }
+        }
+        .quant {
+          user-select: none;
         }
       }
     }

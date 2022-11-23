@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { SectionCart } from './CartCard.styled';
 import ahriFoto from '../../assets/Ahri/AhriImg1Cart.png';
-import menos from '../../assets/menos.svg';
-import mais from '../../assets/mais.svg';
-import { AiTwotoneHeart } from 'react-icons/ai';
+import { FaPlusCircle, FaMinusCircle, FaHeart } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 export const CartCard = ({ value }) => {
 
@@ -28,7 +27,7 @@ export const CartCard = ({ value }) => {
   return (
     <SectionCart>
       <div className='cardsCompras'>
-        <img src={ahriFoto} alt="Foto braum" />
+        <img src={ahriFoto} alt="Foto da Skin" />
         <div className='descricao'>
           <div className='texto'>
             <h3>Ahri Congregação das Bruxas</h3>
@@ -38,11 +37,17 @@ export const CartCard = ({ value }) => {
           </div>
           <div className='precoQuantidade'>
             <div className='quantidade'>
-              <i><AiTwotoneHeart /></i>
-              <p>Quantidade:</p>
-              <i><img onClick={subtrairMaisUm} className='menos' src={menos} alt="" /></i>
-              <p>{add < 10 ? `0${add}` : add}</p>
-              <i><img onClick={adicionarMaisUm} className='mais' src={mais} alt="" /></i>
+            <IconContext.Provider  value={{ color: '#f43f4e', size: '20' }}>
+              <FaHeart className="fotoCoracao" />
+            </IconContext.Provider>
+              <p className='quant'>Quantidade:</p>
+              <IconContext.Provider  value={{ color: '#000000', size: '20' }}>
+                <FaMinusCircle onClick={subtrairMaisUm} className='menos' alt="Adicionar quantidade" />
+              </IconContext.Provider>
+              <p className='quant'>{add < 10 ? `0${add}` : add}</p>
+              <IconContext.Provider  value={{ color: '#000000', size: '20' }}>
+                <FaPlusCircle onClick={adicionarMaisUm} className='mais' alt="Remover quantidade" />
+              </IconContext.Provider>
             </div>
           </div>
         </div>

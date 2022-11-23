@@ -36,6 +36,7 @@ export const ContainerCart = styled.section`
       width: 250px;
       height: 60px;
       user-select: none;
+      color: #012F2D;
       .precoRp {
         color: #429983;
         font-size: 1.375rem;
@@ -71,7 +72,7 @@ export const CartHeader = styled.header`
     text-align: center;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.90);
     height: 500px;
-    width: 700px;
+    width: 625px;
     display: flex;
     justify-content: start;
     align-items: center;

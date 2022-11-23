@@ -6,22 +6,24 @@ export const ContainerCard = styled.div`
   border-radius: 5px;
   position: relative;
   margin-left: 5px;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.60));
   transition: 0.8s;
   &:hover {
-    filter: drop-shadow(0px 1px 2px rgba(255, 255, 255));
+    filter: drop-shadow(0px 1px 2px rgba(255, 255, 255, 0.1));
     transition: 0.3;
   }
   p {
     height: 25px;
-    background-color: rgba(0, 0, 0, 0.40);
+    padding-top: 5px;
+    margin-bottom: 15px;
     text-align: center;
     justify-content: center;
-    color: #fff;
-    font-weight: 700;
-    text-shadow: 2px 2px 1px #000000;
-    font-size: 1.2rem;
+    color: #e1e1e1;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 1.1rem;
+    user-select: none;
   }
 
   .ContainerImagem {
@@ -60,13 +62,13 @@ export const ContainerCard = styled.div`
     }
   }
   .Heart {
-    margin-top: -30px;
+    margin-top: -5px;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(0,0,0, 0.5);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     .ContainerLowerCard {
       height: 20px;
       margin-top: 5px;
@@ -75,11 +77,11 @@ export const ContainerCard = styled.div`
       justify-content: space-around;
     }
     .fotoCoracao {
-      color: red;
+      color: #f43f4e;
     }
     strong {
       font-size: 18px;
-      color: #008B48;
+      color: #2ec67c;
       user-select: none;
     }
     i {
@@ -87,6 +89,13 @@ export const ContainerCard = styled.div`
       font-size: 20px;
       gap: 30px;
       cursor: pointer;
+    }
+  }
+  .icon {
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      transform: scale(1.15);
     }
   }
 `

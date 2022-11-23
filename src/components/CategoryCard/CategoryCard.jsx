@@ -1,6 +1,7 @@
-import React from 'react'
-import { ContainerCard } from './CategoryCard.style'
-import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa'
+import React from 'react';
+import { ContainerCard } from './CategoryCard.style';
+import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 export const CategoryCard = ({ skin, onClick }) => {
   return (
@@ -20,7 +21,7 @@ export const CategoryCard = ({ skin, onClick }) => {
                   </span>
                 ) : (
                   <span onClick={onClick}>
-                    <FaRegHeart />
+                    <IconContext.Provider value={{ color: '#bfbfbf' }}><FaRegHeart className='icon' /></IconContext.Provider>
                   </span>
                 )}
               </i>
@@ -28,7 +29,9 @@ export const CategoryCard = ({ skin, onClick }) => {
                 <strong>RP: {skin.preco}</strong>
               </div>
               <i>
-                <FaCartPlus />
+                <IconContext.Provider  value={{ color: '#bfbfbf' }}>
+                  <FaCartPlus className='icon' />
+                </IconContext.Provider>
               </i>
             </div>
           </div>
