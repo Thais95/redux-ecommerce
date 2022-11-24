@@ -23,7 +23,7 @@ export const Navbar = () => {
 
   function handleSubmit(e) {
     e.preventDefault()
-    mudarBusca(valueInput)
+    console.log(mudarBusca(valueInput))
   }
 
   return (
@@ -37,7 +37,7 @@ export const Navbar = () => {
           <div className='Pesquisar'>
             <input type="text"placeholder='O que você procura?...' onChange={e => setValueInput(e.target.value)}/>
 
-            <button className='iconeProcura'><FaSearch/></button>
+            <button type='submit'  className='iconeProcura'><FaSearch/></button>
           </div>
         </form>
         <Link to={'/carrinho'} className='compras'><FaShoppingCart/></Link>
