@@ -3,7 +3,6 @@ import { DefaultPage } from './components/DefaultPage/DefaultPage'
 import { Cart } from './pages/Cart/Cart'
 import { Category } from './pages/Category/Category'
 import { Home } from './pages/Home/Home'
-import Carrinho from './pages/Cart/Cart'
 
 export const Router = () => {
   return (

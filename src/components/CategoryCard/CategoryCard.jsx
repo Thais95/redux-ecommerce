@@ -19,12 +19,12 @@ export const CategoryCard = ({ skin, onClick }) => {
     dispatch(mudarCarrinho(skin.id))
   }
 
-  console.log(estaNoCarrinho)
+  // console.log(estaNoCarrinho)
 
   function resolverCarrinho() {
     dispatch(mudarCarrinho(skin.id))
   }
-  console.log(skin.id)
+  // console.log(skin.id)
 
   return (
     <ContainerCard>
