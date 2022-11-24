@@ -7,8 +7,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import carrinho from '../../store/reducers/carrinho'
 import { resetarCarrinho } from '../../store/reducers/carrinho'
 
-export const Cart = () => {
+export const Cart = skin => {
   const dispatch = useDispatch()
+
   const { carrinho, total } = useSelector(state => {
     let total = 0
     const regexp = new RegExp(state.busca, 'i')
@@ -23,19 +24,21 @@ export const Cart = () => {
       }
       return itens
     }, [])
+
     return {
       carrinho: carrinhoReduce,
       total
     }
   })
 
+  console.log(carrinho)
   return (
     <CartContainer>
       <CartHeader>Veja sua mercadoria escolhida</CartHeader>
       <ContainerCart>
         <h1 className="tituloCart">Resumo do Carrinho</h1>
         {carrinho.map(item => (
-          <CartCard key={item.id} {...item} carrinho />
+          <CartCard value={item} key={item.id} {...item} />
         ))}
 
         <CartCard value={100} />
