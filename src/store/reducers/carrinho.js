@@ -31,7 +31,6 @@ const carrinhoSlice = createSlice({
   }
 })
 
-export const { mudarCarrinho, mudarQuantidade, resetarCarrinho } =
-  carrinhoSlice.actions
+export const { mudarCarrinho, mudarQuantidade, resetarCarrinho } = carrinhoSlice.actions
 
 export default carrinhoSlice.reducer
