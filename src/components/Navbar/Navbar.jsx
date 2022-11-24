@@ -22,7 +22,7 @@ export const Navbar = () => {
   }
 
   const handleClick = () => {
-    dispatch(mudarBusca(valueInput))
+    dispatch(mudarBusca(valueInput));
     setValueInput('');
   }
 
