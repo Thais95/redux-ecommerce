@@ -41,14 +41,14 @@ export const Cart = () => {
     <CartContainer>
       <CartHeader>Veja sua mercadoria escolhida</CartHeader>
       <ContainerCart>
-        <h1 className="tituloCart">Resumo do Carrinho</h1>
+        <h1 className="tituloCart">Carrinho</h1>
         {carrinho.map(item => (
           <CartCard value={item} key={item.id} {...item} carrinho />
         ))}
         <div className="end">
           <div className="valorTotal">
             <h1>Subtotal:</h1>
-            <h2 className="precoRp">{total} RP</h2>
+            <h2 className="precoRp">{total} <span>RP</span></h2>
           </div>
           <div>
             <button

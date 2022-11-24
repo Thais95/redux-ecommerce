@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContainerComprovante } from './Comprovante.style'
+import { ContainerComprovante, Item, ResumoDaCompra } from './Comprovante.style'
 import { useLocation } from 'react-router-dom'
 
 export const Comprovante = () => {
@@ -8,19 +8,25 @@ export const Comprovante = () => {
   return (
     <>
       <ContainerComprovante>
-        <div className="ContainerConteudo">
-          <h1>Recibo de compras:</h1>
+        <h1>Agradecemos pela sua compra!</h1>
+        <ResumoDaCompra>
+          <header>
+            <h2>Resumo do Carrinho</h2>
+          </header>
           {state.carrinho.map(item => (
             <>
-            <h1>{item.titulo}</h1>
-            <img src={item.foto} alt="Foto da Skin" />
-            <p>{item.preco}</p>
-            <p>{item.quantidade}</p>
-            <p>{item.preco * item.quantidade}</p> 
+              <Item key={item.id}>
+                <img src={item.foto} alt="Imagem da Skin" />
+                <p className='skinNome'>Nome da Skin: <strong>{item.titulo}</strong></p>
+                <p className='skinValor'>Valor unitário: <strong>{item.preco} RP</strong></p>
+                <p className='skinQuant'>Quantidade: <strong>{item.quantidade}</strong></p>
+                <p className='skinTotal'>Valor total: <strong>{item.preco * item.quantidade}</strong></p>
+              </Item>
+              <hr />
             </>
           ))}
-          <h1>Total: {state.total}</h1>
-        </div>
+          <h3>Valor total da compra: <span> {state.total} RP</span></h3>
+        </ResumoDaCompra>
       </ContainerComprovante>
     </>
   )
