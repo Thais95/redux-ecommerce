@@ -1,11 +1,12 @@
-import React from 'react';
-import { CategoryTitle } from '../../components/CategoryTitle/CategoryTitle.jsx';
-import { CategoryCard } from '../../components/CategoryCard/CategoryCard.jsx';
-import { useSelector } from 'react-redux';
-import { CategoryContainer, ContainerCategoryCard } from './Category.style.js';
-import { useParams } from 'react-router-dom';
-import { mudarFavorito } from '../../store/reducers/items';
-import { useDispatch } from 'react-redux';
+import React from 'react'
+import { CategoryTitle } from '../../components/CategoryTitle/CategoryTitle.jsx'
+import { CategoryCard } from '../../components/CategoryCard/CategoryCard.jsx'
+import { useSelector } from 'react-redux'
+import { CategoryContainer, ContainerCategoryCard } from './Category.style.js'
+import { useParams } from 'react-router-dom'
+import { mudarFavorito } from '../../store/reducers/items'
+import { useDispatch } from 'react-redux'
+import { Navbar } from '../../components/Navbar/Navbar.jsx'
 
 export const Category = () => {
   const { userName } = useParams();
