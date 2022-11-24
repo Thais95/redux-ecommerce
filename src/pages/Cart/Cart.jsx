@@ -7,8 +7,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import carrinho from '../../store/reducers/carrinho'
 import { resetarCarrinho } from '../../store/reducers/carrinho'
 
-export const Cart = skin => {
+export const Cart = ( ) => {
   const dispatch = useDispatch()
+
 
   const { carrinho, total } = useSelector(state => {
     let total = 0
@@ -16,6 +17,7 @@ export const Cart = skin => {
     const carrinhoReduce = state.carrinho.reduce((itens, itemNoCarrinho) => {
       const item = state.itens.find(item => item.id === itemNoCarrinho.id)
       total += item.preco * itemNoCarrinho.quantidade
+      console.log(itemNoCarrinho.quantidade)
       if (item.titulo.match(regexp)) {
         itens.push({
           ...item,
@@ -38,12 +40,12 @@ export const Cart = skin => {
       <ContainerCart>
         <h1 className="tituloCart">Resumo do Carrinho</h1>
         {carrinho.map(item => (
-          <CartCard value={item} key={item.id} {...item} />
+          <CartCard value={item} key={item.id} {...item} carrinho />
         ))}
         <div className="end">
           <div className="valorTotal">
             <h1>Subtotal:</h1>
-            <h2 className="precoRp">2390 RP</h2>
+            <h2 className="precoRp">{total} RP</h2>
           </div>
           <div>
             <button className="btnCart">Finalizar Compra</button>
