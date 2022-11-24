@@ -17,9 +17,9 @@ export const CartCard = ({ value }) => {
   // let quantidades = value.quantidade
   // let idCart = value.id
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log(value)
-  },[value])
+  }, [value])
 
 
   return (
@@ -33,20 +33,28 @@ export const CartCard = ({ value }) => {
           <div className="preco">
             <p>{value.preco}</p>
           </div>
-        <div className="precoQuantidade">
+          <div className="precoQuantidade">
             <div className="quantidade">
-              <IconContext.Provider value={{ color: '#f43f4e', size: '20' }}>
-                <FaHeart className="fotoCoracao" />
-              </IconContext.Provider>
+              <i>
+                {value.favorito ? (
+                  <IconContext.Provider value={{ color: '#f43f4e' }}>
+                    <FaHeart />
+                  </IconContext.Provider>
+                ) : (
+                  <IconContext.Provider value={{ color: '#1a1a1a' }}>
+                    <FaRegHeart className="icon" />
+                  </IconContext.Provider>
+                )}
+              </i>
               <p className="quant">Quantidade:</p>
               <IconContext.Provider value={{ color: '#000000', size: '20' }}>
 
-                <button disabled={value.quantidade === 1 && true} onClick={()=>{
-                      if(value.quantidade >=1){
-                        dispatch(mudarQuantidade({id: value.id, quantidade: -1}))
-                      }
-                      return
-                    }}>
+                <button disabled={value.quantidade === 1 && true} onClick={() => {
+                  if (value.quantidade >= 1) {
+                    dispatch(mudarQuantidade({ id: value.id, quantidade: -1 }))
+                  }
+                  return
+                }}>
                   <FaMinusCircle
                     className="menos"
                     alt="Adicionar quantidade"
@@ -54,15 +62,15 @@ export const CartCard = ({ value }) => {
                 </button>
 
               </IconContext.Provider>
-              
+
               <p className="quant">{value.quantidade}</p>
 
               <IconContext.Provider value={{ color: '#000000', size: '20' }}>
                 <FaPlusCircle
-                  onClick={()=>{
-                    if(value.quantidade >=1){
-                      dispatch(mudarQuantidade({id: value.id, quantidade: +1}))
-                      
+                  onClick={() => {
+                    if (value.quantidade >= 1) {
+                      dispatch(mudarQuantidade({ id: value.id, quantidade: +1 }))
+
                     }
                   }}
                   className="mais"
@@ -71,7 +79,7 @@ export const CartCard = ({ value }) => {
               </IconContext.Provider>
             </div>
           </div>
-          
+
         </div>
       </div>
     </SectionCart>
