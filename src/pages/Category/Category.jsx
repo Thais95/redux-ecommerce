@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { CategoryTitle } from '../../components/CategoryTitle/CategoryTitle.jsx';
 import { CategoryCard } from '../../components/CategoryCard/CategoryCard.jsx';
 import { useSelector } from 'react-redux';
