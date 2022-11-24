@@ -11,6 +11,16 @@ export const SectionCart = styled.section`
     width: 800px;
     height: 120px;
     position: relative;
+    .iconRemover {
+      cursor: pointer;
+      transition: 0.5s;
+      color: #1a1a1a;
+      &:hover {
+        transform: scale(1.08);
+        transition: 0.5s;
+        color: #f43f4e;
+      }
+    }
     .btn {
       background: transparent;
       border: none;
