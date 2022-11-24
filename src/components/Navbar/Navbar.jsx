@@ -22,8 +22,15 @@ export const Navbar = () => {
   }
 
   const handleClick = () => {
-    dispatch(mudarBusca(valueInput))
+    dispatch(mudarBusca(valueInput));
     setValueInput('');
+  }
+
+  const handleKeyPress = (event) => {
+    if (event.charCode == 13) {
+      dispatch(mudarBusca(valueInput));
+      setValueInput('');
+    }
   }
 
   return (
@@ -40,7 +47,8 @@ export const Navbar = () => {
           <input type="text"
             placeholder='O que você procura?...'
             value={valueInput}
-            onChange={handleChange} />
+            onChange={handleChange} 
+            onKeyPress={handleKeyPress} />
           <i
             onClick={handleClick}
             className='iconeProcura'>
