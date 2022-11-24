@@ -2,14 +2,18 @@ import React from 'react'
 import { CartCard } from '../../components/CartCard/CartCard'
 import { CartContainer, CartHeader, ContainerCart } from './Cart.styled'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import { Comprovante } from '../Comprovante/Comprovante'
+import { Navigate } from 'react-router-dom'
 
 // import carrinho, { resetarCarrinho } from '../../store/reducers/carrinho'
 import carrinho from '../../store/reducers/carrinho'
 import { resetarCarrinho } from '../../store/reducers/carrinho'
 
-export const Cart = ( ) => {
+export const Cart = () => {
   const dispatch = useDispatch()
 
+  const navigate = useNavigate()
 
   const { carrinho, total } = useSelector(state => {
     let total = 0
@@ -17,7 +21,7 @@ export const Cart = ( ) => {
     const carrinhoReduce = state.carrinho.reduce((itens, itemNoCarrinho) => {
       const item = state.itens.find(item => item.id === itemNoCarrinho.id)
       total += item.preco * itemNoCarrinho.quantidade
-      console.log(itemNoCarrinho.quantidade)
+
       if (item.titulo.match(regexp)) {
         itens.push({
           ...item,
@@ -33,7 +37,6 @@ export const Cart = ( ) => {
     }
   })
 
-  console.log(carrinho)
   return (
     <CartContainer>
       <CartHeader>Veja sua mercadoria escolhida</CartHeader>
@@ -48,7 +51,14 @@ export const Cart = ( ) => {
             <h2 className="precoRp">{total} RP</h2>
           </div>
           <div>
-            <button className="btnCart">Finalizar Compra</button>
+            <button
+              className="btnCart"
+              onClick={() => {
+                navigate('/comprovante', { state: carrinho })
+              }}
+            >
+              Finalizar Compra
+            </button>
           </div>
         </div>
       </ContainerCart>
