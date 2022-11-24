@@ -4,6 +4,9 @@ import BgCart from '../../assets/shop.webp'
 export const CartContainer = styled.div`
   background-image: url(${BgCart});
   background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
 `
 
 export const ContainerCart = styled.section`

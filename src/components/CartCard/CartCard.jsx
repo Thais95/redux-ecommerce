@@ -1,13 +1,14 @@
 import { SectionCart } from './CartCard.styled';
-import { FaPlusCircle, FaMinusCircle, FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaPlusCircle, FaMinusCircle, FaHeart, FaRegHeart, FaTrash } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { mudarQuantidade } from '../../store/reducers/carrinho';
+import { mudarQuantidade, removerItem, resetarCarrinho } from '../../store/reducers/carrinho';
 
 export const CartCard = ({ value }) => {
   const dispatch = useDispatch()
 
   const carrin = useSelector(state => state.carrinho)
+
 
   return (
     <SectionCart>
@@ -28,7 +29,7 @@ export const CartCard = ({ value }) => {
                     <FaHeart />
                   </IconContext.Provider>
                 ) : (
-                  <IconContext.Provider value={{ color: '#1a1a1a', size: '20' }}>
+                  <IconContext.Provider value={{ size: '20' }}>
                     <FaRegHeart className="icon" />
                   </IconContext.Provider>
                 )}
@@ -46,7 +47,7 @@ export const CartCard = ({ value }) => {
                   return
                 }}
               >
-                <IconContext.Provider value={{ color: '#000000', size: '20' }}>
+                <IconContext.Provider value={{ color: '#1a1a1a', size: '20' }}>
                   <FaMinusCircle className="menos" alt="Remover quantidade" />
                 </IconContext.Provider>
               </button>
@@ -57,14 +58,22 @@ export const CartCard = ({ value }) => {
                 onClick={() => {
                   if (value.quantidade >= 1) {
                     dispatch(
-                      mudarQuantidade({ id: value.id, quantidade: +1 }))}}}>
-                <IconContext.Provider value={{ color: '#000000', size: '20' }}>
+                      mudarQuantidade({ id: value.id, quantidade: +1 }))
+                  }
+                }}>
+                <IconContext.Provider value={{ color: '#1a1a1a', size: '20' }}>
                   <FaPlusCircle
                     className="mais"
                     alt="Adicionar quantidade"
                   />
                 </IconContext.Provider>
               </button>
+
+              <i className='iconRemover' onClick={() => dispatch(removerItem(value.id))}>
+                <IconContext.Provider value={{ color: '#1a1a1a', size: '20' }}>
+                  <FaTrash />
+                </IconContext.Provider>
+              </i>
 
             </div>
           </div>
