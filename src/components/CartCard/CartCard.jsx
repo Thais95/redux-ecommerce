@@ -16,10 +16,6 @@ export const CartCard = ({ value }) => {
   // let quantidades = value.quantidade
   // let idCart = value.id
 
-  useEffect(() => {
-    console.log(value)
-  }, [value])
-
   return (
     <SectionCart>
       <div className="cardsCompras">
