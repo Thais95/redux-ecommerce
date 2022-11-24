@@ -1,10 +1,9 @@
-import { SectionCart } from './CartCard.styled'
-import { FaPlusCircle, FaMinusCircle, FaHeart } from 'react-icons/fa'
-import { IconContext } from 'react-icons'
-import { useDispatch, useSelector } from 'react-redux'
-import { mudarQuantidade } from '../../store/reducers/carrinho'
-import { useEffect, useState } from 'react'
-import { validate } from 'uuid'
+import { SectionCart } from './CartCard.styled';
+import { FaPlusCircle, FaMinusCircle, FaHeart, FaRegHeart } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import { useDispatch, useSelector } from 'react-redux';
+import { mudarQuantidade } from '../../store/reducers/carrinho';
+import { useEffect } from 'react';
 
 export const CartCard = ({ value }) => {
 
@@ -49,7 +48,7 @@ export const CartCard = ({ value }) => {
               <p className="quant">Quantidade:</p>
               <IconContext.Provider value={{ color: '#000000', size: '20' }}>
 
-                <button disabled={value.quantidade === 1 && true} onClick={() => {
+                <button className='minus-btn' disabled={value.quantidade === 1 && true} onClick={() => {
                   if (value.quantidade >= 1) {
                     dispatch(mudarQuantidade({ id: value.id, quantidade: -1 }))
                   }
