@@ -11,7 +11,7 @@ export const SectionCart = styled.section`
     width: 800px;
     height: 120px;
     position: relative;
-    .minus-btn {
+    .btn {
       background: transparent;
       border: none;
       outline: none;

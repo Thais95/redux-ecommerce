@@ -54,7 +54,7 @@ export const Cart = () => {
             <button
               className="btnCart"
               onClick={() => {
-                navigate('/comprovante', { state: { carrinho, total }  })
+                navigate('/comprovante', { state: { carrinho, total } })
                 dispatch(resetarCarrinho())
               }}
             >

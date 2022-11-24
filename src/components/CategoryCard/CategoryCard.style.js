@@ -53,7 +53,6 @@ export const ContainerCard = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-
       img {
         width: 15px;
         height: 15px;
@@ -77,9 +76,6 @@ export const ContainerCard = styled.div`
       display: flex;
       justify-content: space-around;
     }
-    .fotoCoracao {
-      color: #f43f4e;
-    }
     strong {
       font-size: 18px;
       color: #2ec67c;
@@ -93,10 +89,10 @@ export const ContainerCard = styled.div`
     }
   }
   .icon {
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
-      transition: 0.5s;
-      transform: scale(1.15);
+      transition: 0.3s;
+      transform: scale(1.2);
     }
   }
 `

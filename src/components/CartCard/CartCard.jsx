@@ -24,11 +24,11 @@ export const CartCard = ({ value }) => {
             <div className="quantidade">
               <i>
                 {value.favorito ? (
-                  <IconContext.Provider value={{ color: '#f43f4e' }}>
+                  <IconContext.Provider value={{ color: '#f43f4e', size: '20' }}>
                     <FaHeart />
                   </IconContext.Provider>
                 ) : (
-                  <IconContext.Provider value={{ color: '#1a1a1a' }}>
+                  <IconContext.Provider value={{ color: '#1a1a1a', size: '20' }}>
                     <FaRegHeart className="icon" />
                   </IconContext.Provider>
                 )}
@@ -36,7 +36,7 @@ export const CartCard = ({ value }) => {
               <p className="quant">Quantidade:</p>
 
               <button
-                className='minus-btn'
+                className='btn'
                 disabled={value.quantidade === 1 && true}
                 onClick={() => {
                   if (value.quantidade >= 1) {
@@ -54,19 +54,20 @@ export const CartCard = ({ value }) => {
 
               <p className="quant">{value.quantidade}</p>
 
-              <IconContext.Provider value={{ color: '#000000', size: '20' }}>
-                <FaPlusCircle
-                  onClick={() => {
-                    if (value.quantidade >= 1) {
-                      dispatch(
-                        mudarQuantidade({ id: value.id, quantidade: +1 })
-                      )
-                    }
-                  }}
-                  className="mais"
-                  alt="Adicionar quantidade"
-                />
-              </IconContext.Provider>
+              <button
+                className='btn'
+                onClick={() => {
+                  if (value.quantidade >= 1) {
+                    dispatch(
+                      mudarQuantidade({ id: value.id, quantidade: +1 }))}}}>
+                <IconContext.Provider value={{ color: '#000000', size: '20' }}>
+                  <FaPlusCircle
+                    className="mais"
+                    alt="Adicionar quantidade"
+                  />
+                </IconContext.Provider>
+              </button>
+
             </div>
           </div>
         </div>
