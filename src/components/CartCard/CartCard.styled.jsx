@@ -13,6 +13,12 @@ export const SectionCart = styled.section`
     position: relative;
     img {
       -webkit-user-drag: none;
+      height: 100px;
+      width: 300px;
+      object-fit: cover;
+      object-position: top;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
     .descricao {
       display: flex;

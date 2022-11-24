@@ -40,8 +40,6 @@ export const Cart = skin => {
         {carrinho.map(item => (
           <CartCard value={item} key={item.id} {...item} />
         ))}
-
-        <CartCard value={100} />
         <div className="end">
           <div className="valorTotal">
             <h1>Subtotal:</h1>

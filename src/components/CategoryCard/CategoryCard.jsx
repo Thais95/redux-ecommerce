@@ -1,11 +1,9 @@
-import React from 'react'
-import { ContainerCard } from './CategoryCard.style'
-import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa'
-import { IconContext } from 'react-icons'
-import { useSelector, useDispatch } from 'react-redux'
-import carrinhoSlice from '../../store/reducers/carrinho'
-import { mudarCarrinho } from '../../store/reducers/carrinho'
-import items from '../../store/reducers/items'
+import React from 'react';
+import { ContainerCard } from './CategoryCard.style';
+import { FaRegHeart, FaHeart, FaCartPlus } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import { useSelector, useDispatch } from 'react-redux';
+import { mudarCarrinho } from '../../store/reducers/carrinho';
 
 export const CategoryCard = ({ skin, onClick }) => {
   const dispatch = useDispatch()
@@ -15,16 +13,13 @@ export const CategoryCard = ({ skin, onClick }) => {
 
   const carrinho = useSelector(state => state.carrinho)
 
-  function removerCarrinho() {
-    dispatch(mudarCarrinho(skin.id))
-  }
-
-  // console.log(estaNoCarrinho)
+  // function removerCarrinho() {
+  //   dispatch(mudarCarrinho(skin.id))
+  // }
 
   function resolverCarrinho() {
     dispatch(mudarCarrinho(skin.id))
   }
-  // console.log(skin.id)
 
   return (
     <ContainerCard>
