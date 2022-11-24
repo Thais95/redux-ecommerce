@@ -8,6 +8,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
     .logoContainer{
         display: flex;
         align-items: center;
