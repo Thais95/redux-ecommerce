@@ -34,7 +34,6 @@ export const CartCard = ({ value }) => {
                 )}
               </i>
               <p className="quant">Quantidade:</p>
-
               <button
                 className='btn'
                 disabled={value.quantidade === 1 && true}
@@ -51,7 +50,6 @@ export const CartCard = ({ value }) => {
                   <FaMinusCircle className="menos" alt="Remover quantidade" />
                 </IconContext.Provider>
               </button>
-
               <p className="quant">{value.quantidade}</p>
 
               <button
