@@ -17,9 +17,7 @@
 ### O projeto possui algumas dependências, aqui embaixo vai os comandos para você instalar:
 
 1 - npm i <br>
-2 - npm react-router-dom <br>
-3 - npm i react-icons <br>
-4 - npm i styled-components
+
 
 ### Para iniciar o projeto:
 Somente digitar no terminal: npm start
